@@ -24,16 +24,17 @@ namespace RPS
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseDeveloperExceptionPage();
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            app.UseStaticFiles();
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Something went horribly wrong :0");
+                await context.Response.WriteAsync("Hello World!");
             });
         }
     }

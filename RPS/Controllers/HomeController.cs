@@ -15,17 +15,13 @@ namespace RPS.Controllers
     }
 
     [HttpPost("/")]
-      public ActionResult Create()
-      {
+    public ActionResult Create()
+    {
       string player1 = Request.Form["player1Guess"];
-      string player2 = Request.Form["player2Guess"];
-
-      Game newGame = new Game(player1, player2);
-      newGame.GetWinner(player1, player2);
-      string winner = newGame.GetResult();
+      Game newGame = new Game(player1);
+      newGame.GetWinner(player1);
+      int winner = newGame.GetResult();
       return View("Index", winner);
-  }
-
-
     }
   }
+}

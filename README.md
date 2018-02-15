@@ -1,53 +1,33 @@
-# Anagram
+# Scrable Calculator
 
-#### By Frank Ngo
+#### By Frank Ngo & Ivan Ramos
 
 ## Description
 
-A program to test if a set of words are anagrams of another word.
+A program to output and calculate a score based on a user entered word.
 
 ## Specifications
--Draw-
-
-* If both Users enter the same Inputs the game will end as a draw
-  * Example Input: P1: Rock P2: Rock
-  * Example Output: "It's a draw!"
-  
-* If both Users enter the same Inputs the game will end as a draw
-  * Example Input: P1: Scissors P2: Scissors
-  * Example Output: "It's a draw!"
-
-* If both Users enter the same Inputs the game will end as a draw
-  * Example Input: P1: Paper P2: Paper
-  * Example Output: "It's a draw!"
-
--User 1 wins-
-
-* If User1 enters Paper and User2 enters Rock, User 1 will win
-  * Example Input: P1: Paper P2: Rock
-  * Example Output: "User 1 wins"
-
-* If User1 enters Scissors and User2 enters Paper, User 1 will win
-  * Example Inputs: P1:Scissors P2: Paper
-  * Example Output: "User 1 wins"
-
-* If User1 enters Rock and User2 enters Scissors, User 1 will win
-  * Example Input: P1:Rock P2:Scissors
-  * Example Output: "User 1 wins"
-
--User 2 wins-
-
-* If User1 enters Rock and User2 enters Paper, User 2 will win
-  * Example Input: P1: Rock P2: Paper
-  * Example Output: "User 2 wins"
-
-* If User1 enters Paper and User2 enters Scissors, User 2 will win
-  * Example Inputs: P1:Paper P2: Scissors
-  * Example Output: "User 2 wins"
-
-* If User1 enters Scissors and User2 enters Rock, User 2 will win
-  * Example Input: P1:Scissors P2:Rock
-  * Example Output: "User 2 wins"
+  * User Inputs a word that contains the following letters "A, E, I, O, U, L, N, R, S, T " the score will add One point per letters
+    * Example Input: "plant"
+    * Example Output: score = 4
+  * User Inputs a word that contains the following letters "D, G " the score will add Two per letters
+    * Example Input: "dog"
+    * Example Output: score = 4
+  * User Inputs a word that contains the following letters "B, C, M, P" the score will add Three per letters
+    * Example Input: "mom"
+    * Example Output: score = 6
+  * User Inputs a word that contains the following letters "F, H, V, W, Y " the score will add Four per letters
+    * Example Input: "how"
+    * Example Output: score = 8
+  * User Inputs a word that contains the following letters "K" the score will add Five per letters
+    * Example Input: "kick"
+    * Example Output: score = 10
+  * User Inputs a word that contains the following letters "J, X" the score will add Eight per letters
+    * Example Input: "jack"
+    * Example Output: score = 8
+  * User Inputs a word that contains the following letters "Q, Z" the score will add Ten per letters
+    * Example Input: "zack"
+    * Example Output: score = 10
 
 
 ### Installing
