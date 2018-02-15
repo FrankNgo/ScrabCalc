@@ -7,21 +7,48 @@
 A program to test if a set of words are anagrams of another word.
 
 ## Specifications
+-Draw-
 
-  * Check that the user can enter in a word into the first field for the word to test.
-  * Check that the user can enter in words into the test field for the words to test from.
-    * Check if the user entered in case sensitive characters
-      * Expected Input: 'dog'
-      * Expected Output: True
-      * Expected Input: 'Dog'
-      * Expected Output: True
-    * Check if the user entered in a alphanumeric character
-      * Expected Input: '3dog'
-      * Expected Output: True
-    * Check if the user entered in a special character
-      * Expected Input: '$dog'
-      * Expected Output: False
-  * Check that the form proceeds and user can enter in information.
+* If both Users enter the same Inputs the game will end as a draw
+  * Example Input: P1: Rock P2: Rock
+  * Example Output: "It's a draw!"
+  
+* If both Users enter the same Inputs the game will end as a draw
+  * Example Input: P1: Scissors P2: Scissors
+  * Example Output: "It's a draw!"
+
+* If both Users enter the same Inputs the game will end as a draw
+  * Example Input: P1: Paper P2: Paper
+  * Example Output: "It's a draw!"
+
+-User 1 wins-
+
+* If User1 enters Paper and User2 enters Rock, User 1 will win
+  * Example Input: P1: Paper P2: Rock
+  * Example Output: "User 1 wins"
+
+* If User1 enters Scissors and User2 enters Paper, User 1 will win
+  * Example Inputs: P1:Scissors P2: Paper
+  * Example Output: "User 1 wins"
+
+* If User1 enters Rock and User2 enters Scissors, User 1 will win
+  * Example Input: P1:Rock P2:Scissors
+  * Example Output: "User 1 wins"
+
+-User 2 wins-
+
+* If User1 enters Rock and User2 enters Paper, User 2 will win
+  * Example Input: P1: Rock P2: Paper
+  * Example Output: "User 2 wins"
+
+* If User1 enters Paper and User2 enters Scissors, User 2 will win
+  * Example Inputs: P1:Paper P2: Scissors
+  * Example Output: "User 2 wins"
+
+* If User1 enters Scissors and User2 enters Rock, User 2 will win
+  * Example Input: P1:Scissors P2:Rock
+  * Example Output: "User 2 wins"
+
 
 ### Installing
 
